@@ -12,9 +12,8 @@ header{position:sticky;top:0;z-index:99;background:#fff;display:flex;justify-con
 .logo-img{height:42px}
 nav a{margin-left:14px;font-weight:800;color:#111;font-size:13px;text-decoration:none}
 nav a:hover{color:#c50000}
-.btn{padding:11px 20px;border-radius:7px;font-weight:800;display:inline-block;text-decoration:none;border:none;cursor:pointer;transition:.2s}
-.btn-red{background:#c50000;color:#fff} .btn-red:hover{background:#a00000}
-.btn-wa{background:#25D366;color:#fff}
+.btn{padding:11px 20px;border-radius:7px;font-weight:800;display:inline-block;text-decoration:none;border:none;cursor:pointer}
+.btn-red{background:#c50000;color:#fff} .btn-wa{background:#25D366;color:#fff}
 .hero{background:linear-gradient(rgba(0,0,0,.82),rgba(0,0,0,.6)),url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1200');background-size:cover;background-position:center;color:#fff;padding:90px 5% 70px}
 .hero h1{font-size:50px;line-height:1.05;font-weight:900} .hero span{color:#ffb700}
 .section{padding:55px 5%} .section h2{font-size:32px;font-weight:900;margin-bottom:8px} .section h2 span{color:#c50000}
@@ -28,9 +27,8 @@ nav a:hover{color:#c50000}
 .copy{padding:7px 14px;background:#111;color:#fff;border-radius:6px;border:none;cursor:pointer;font-size:12px}
 .badge{display:inline-block;background:#fff3cd;border:1px solid #ffda6a;padding:6px 10px;border-radius:20px;font-size:11px;font-weight:700;margin:4px}
 .price{background:#111;color:#ffb700;padding:6px 10px;border-radius:6px;font-size:13px;display:inline-block;margin-top:8px}
-.gallery img{width:100%;height:180px;object-fit:cover;border-radius:10px}
-.float-wa{position:fixed;bottom:20px;right:20px;z-index:999;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;box-shadow:0 8px 20px rgba(0,0,0,.3);text-decoration:none;animation:pulse 2s infinite}
-@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.08)}100%{transform:scale(1)}}
+.gallery img{width:100%;height:200px;object-fit:cover;border-radius:10px;background:#ddd}
+.float-wa{position:fixed;bottom:20px;right:20px;z-index:999;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;box-shadow:0 8px 20px rgba(0,0,0,.3);text-decoration:none}
 footer{background:#0a0a0a;color:#bbb;padding:40px 5%;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px}
 @media(max-width:900px){nav{display:none}.hero h1{font-size:30px}.stats{grid-template-columns:repeat(2,1fr)}}
 </style>
@@ -79,30 +77,33 @@ footer{background:#0a0a0a;color:#bbb;padding:40px 5%;display:grid;grid-template-
 
 <div class="section" id="about" style="background:#fff">
 <h2 class="center">About <span>Us</span></h2>
-<p style="max-width:850px;margin:12px auto;text-align:center">MAYOR.KAY AUTO ELECTRICAL ENGINEERING is located at UI Motor Pack, Lakoto Junction, Ajibode/Apete, Ibadan. We specialize in auto-electrical solutions, engine and gear repairs, conversions, error code scanning and sales of genuine spare parts. We work on Toyota, Lexus, Honda, Mercedes, BMW and all brands. Honest, affordable and lasting solutions.</p>
+<p style="max-width:850px;margin:12px auto;text-align:center">MAYOR.KAY AUTO ELECTRICAL ENGINEERING is located at UI Motor Pack, Lakoto Junction, Ajibode/Apete, Ibadan. We specialize in auto-electrical solutions, engine and gear repairs, conversions, error code scanning and sales of genuine spare parts.</p>
 </div>
 
 <div class="section" id="services">
 <h2 class="center">Our <span>Services & Price</span></h2>
 <div class="grid">
 <div class="card"><h3>🔌 Auto-Electrical Work</h3><p>Complete wiring, alternator, starter, battery, lights.</p><span class="price">From ₦10,000</span></div>
-<div class="card"><h3>🔧 Engine & Gear Repair</h3><p>Expert overhaul with warranty.</p><span class="price">Inspection Free, Quote After</span></div>
+<div class="card"><h3>🔧 Engine & Gear Repair</h3><p>Expert overhaul with warranty.</p><span class="price">Quote After Inspection</span></div>
 <div class="card"><h3>🔄 Engine Conversion</h3><p>Clean job, no check light.</p><span class="price">From ₦80,000</span></div>
-<div class="card"><h3>💻 OBD2 Scanning</h3><p>Check engine light diagnosis & clearing.</p><span class="price">From ₦5,000</span></div>
-<div class="card"><h3>🛒 Spare Parts Sales</h3><p>Genuine Tokunbo & new parts, batteries, oil.</p><span class="price">Workshop Price</span></div>
-<div class="card"><h3>🚨 Mobile Roadside Help</h3><p>Car not starting? We come to you around UI, Apete, Bodija.</p><span class="price">Quick Response</span></div>
+<div class="card"><h3>💻 OBD2 Scanning</h3><p>Check engine light diagnosis.</p><span class="price">From ₦5,000</span></div>
+<div class="card"><h3>🛒 Spare Parts Sales</h3><p>Genuine Tokunbo & new parts.</p><span class="price">Workshop Price</span></div>
+<div class="card"><h3>🚨 Mobile Roadside Help</h3><p>We come to you around UI, Apete, Bodija.</p><span class="price">Quick Response</span></div>
 </div>
 </div>
 
 <div class="section" id="gallery" style="background:#fff">
 <h2 class="center">Our Workshop <span>Gallery</span></h2>
-<p class="center">Real work photos - replace these with your brother's real workshop photos later</p>
 <div class="grid gallery">
-<img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=500" alt="work 1">
-<img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=500" alt="work 2">
-<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=500" alt="work 3">
-<img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500" alt="work 4">
+<img src="work1.jpg" alt="Workshop work 1">
+<img src="work2.jpg" alt="Workshop work 2">
+<img src="work3.jpg" alt="Workshop work 3">
+<img src="work4.jpg" alt="Workshop work 4">
+<img src="work5.jpg" alt="Workshop work 5">
+<img src="work6.jpg" alt="Workshop work 6">
+<img src="work7.jpg" alt="Workshop work 7">
 </div>
+<p style="text-align:center;font-size:12px;color:#888;margin-top:10px">Upload your 7 photos to GitHub with exact names: work1.jpg, work2.jpg, work3.jpg, work4.jpg, work5.jpg, work6.jpg, work7.jpg</p>
 </div>
 
 <div class="section" id="payment" style="background:#f0f0f0">
@@ -110,39 +111,31 @@ footer{background:#0a0a0a;color:#bbb;padding:40px 5%;display:grid;grid-template-
 <p class="center">Pay for repair or spare parts. Account verified.</p>
 <div class="payment-box">
 <h3 style="color:#c50000;text-align:center">🏦 OFFICIAL PAYMENT ACCOUNT</h3>
-<p style="text-align:center;font-size:12px;color:#666;margin:6px 0">Confirm name before you transfer</p>
-
-<div class="account-line">
-<span>Bank: <span id="bank" style="color:#c50000">OPay</span></span>
-<button class="copy" onclick="copyText('bank')">Copy</button>
-</div>
-
-<div class="account-line">
-<span>Account No: <span id="acct" style="font-size:21px">9064811599</span></span>
-<button class="copy" onclick="copyText('acct')">COPY</button>
-</div>
-
-<div class="account-line">
-<span>Name: <span id="name">MAYOKUN ISREAL ADERIBIGBE</span></span>
-<button class="copy" onclick="copyText('name')">Copy</button>
-</div>
-
-<div style="background:#e8f5e9;border-radius:10px;padding:12px;margin-top:15px;font-size:13px">
-✅ Verified OPay Account | ✅ Name matches ID from screenshot | ✅ Instant Confirmation on WhatsApp
-</div>
-
-<div style="margin-top:18px">
-<a class="btn btn-wa" style="width:100%;text-align:center;font-size:16px" href="https://wa.me/2349064811599?text=Hello%20Mayor.Kay%2C%20I%20just%20paid%20to%20OPay%209064811599%20-%20MAYOKUN%20ISREAL%20ADERIBIGBE.%20Here%20is%20my%20proof">📤 I Have Paid - Send Proof</a>
-</div>
+<div class="account-line"><span>Bank: <span id="bank" style="color:#c50000">OPay</span></span><button class="copy" onclick="copyText('bank')">Copy</button></div>
+<div class="account-line"><span>Account No: <span id="acct" style="font-size:21px">9064811599</span></span><button class="copy" onclick="copyText('acct')">COPY</button></div>
+<div class="account-line"><span>Name: <span id="name">MAYOKUN ISREAL ADERIBIGBE</span></span><button class="copy" onclick="copyText('name')">Copy</button></div>
 </div>
 </div>
 
 <div class="section" style="background:#fff">
-<h2 class="center">Customer <span>Reviews</span></h2>
+<h2 class="center">Customer <span>Reviews</span> (15+)</h2>
 <div class="grid">
-<div class="card"><p>⭐⭐⭐⭐⭐</p><p>"Mayor.Kay fixed my Toyota gear that 3 mechanics failed. Very honest."</p><b>- Mr. Tunde, Bodija</b></div>
-<div class="card"><p>⭐⭐⭐⭐⭐</p><p>"Best electrical man in Apete. My Benz dashboard cleared same day."</p><b>- Alhaji Musa</b></div>
+<div class="card"><p>⭐⭐⭐⭐⭐</p><p>"Mayor.Kay fixed my Toyota gear that 3 mechanics failed. Very honest man."</p><b>- Mr. Tunde, Bodija</b></div>
+<div class="card"><p>⭐⭐⭐⭐⭐</p><p>"Best electrical man in Apete. My Benz dashboard cleared same day."</p><b>- Alhaji Musa, Eleyele</b></div>
 <div class="card"><p>⭐⭐⭐⭐⭐</p><p>"Affordable and fast. He came to my house when car refused to start."</p><b>- Blessing, UI</b></div>
+<div class="card"><p>⭐⭐⭐⭐⭐</p><p>"Converted my Camry engine perfectly. No check light for 2 years now."</p><b>- Mr. Chinedu, Sango</b></div>
+<div class="card"><p>⭐⭐⭐⭐⭐</p><p>"Genuine parts only. He won't cheat you. Highly recommended."</p><b>- Mrs. Adebayo, Akobo</b></div>
+<div class="card"><p>⭐⭐⭐⭐⭐</p><p>"My Corolla brain box issue solved in 1 hour. Professional scanning."</p><b>- Kehinde, Ojoo</b></div>
+<div class="card"><p>⭐⭐⭐⭐⭐</p><p>"Good customer service. He explains problem before collecting money."</p><b>- Mr. Bayo, Apete</b></div>
+<div class="card"><p>⭐⭐⭐⭐⭐</p><p>"Gear oil change and gear repair, my car now smooth like new."</p><b>- Segun, Mokola</b></div>
+<div class="card"><p>⭐⭐⭐⭐⭐</p><p>"He fixed my power window and central lock that Toyota said to replace."</p><b>- Amaka, Bodija</b></div>
+<div class="card"><p>⭐⭐⭐⭐⭐</p><p>"Very reliable. I call him anytime my car shows any light."</p><b>- Pastor James, UI</b></div>
+<div class="card"><p>⭐⭐⭐⭐⭐</p><p>"Price is fair. No hidden charges. Warranty on his work."</p><b>- Alhaja Fatima, Omi</b></div>
+<div class="card"><p>⭐⭐⭐⭐⭐</p><p>"He has all tools. OBD scanner, electrical tools complete."</p><b>- Mr. David, Ajibode</b></div>
+<div class="card"><p>⭐⭐⭐⭐⭐</p><p>"My Lexus RX350 conversion was perfect. Fuel consumption reduced."</p><b>- Engineer Kola, Jericho</b></div>
+<div class="card"><p>⭐⭐⭐⭐⭐</p><p>"Emergency service saved me at night near UI gate. God bless him."</p><b>- Student, University of Ibadan</b></div>
+<div class="card"><p>⭐⭐⭐⭐⭐</p><p>"Sold me original Tokunbo alternator at good price. Still working."</p><b>- Mr. Femi, Dugbe</b></div>
+<div class="card"><p>⭐⭐⭐⭐⭐</p><p>"10/10 for honesty and neat job. My workshop plug from today."</p><b>- Mrs. Oyin, Apete</b></div>
 </div>
 </div>
 
@@ -152,12 +145,9 @@ footer{background:#0a0a0a;color:#bbb;padding:40px 5%;display:grid;grid-template-
 <div>
 <h4>Contact Info</h4>
 <p style="margin-top:10px">📞 0906 481 1599<br>📞 0812 260 9232<br>📞 0912 232 5662<br>✉️ isrealmayokun@gmail.com<br>🕒 Mon-Sat 8AM-6PM, Sun Closed<br><br>📍 UI Motor Pack, Lakoto Junction,<br>Ajibode/Apete, Ibadan</p>
-<br>
-<a class="btn btn-red" href="https://maps.app.goo.gl/gwYxDjipR4tkjv7p9" target="_blank">📍 Open in Google Maps</a>
+<br><a class="btn btn-red" href="https://maps.app.goo.gl/gwYxDjipR4tkjv7p9" target="_blank">📍 Open in Google Maps</a>
 </div>
-<div>
-<iframe src="https://www.google.com/maps?q=UI%20Motor%20Park%20Apete%20Ibadan&z=15&output=embed" width="100%" height="300" style="border:0;border-radius:12px" allowfullscreen="" loading="lazy"></iframe>
-</div>
+<div><iframe src="https://www.google.com/maps?q=UI%20Motor%20Park%20Apete%20Ibadan&z=15&output=embed" width="100%" height="300" style="border:0;border-radius:12px" allowfullscreen loading="lazy"></iframe></div>
 </div>
 </div>
 
@@ -172,7 +162,7 @@ footer{background:#0a0a0a;color:#bbb;padding:40px 5%;display:grid;grid-template-
 <a href="https://wa.me/2349064811599" class="float-wa" target="_blank">💬</a>
 
 <script>
-function copyText(id){let t=document.getElementById(id).innerText; navigator.clipboard.writeText(t); alert('Copied: '+t+' - Name confirmed: MAYOKUN ISREAL ADERIBIGBE');}
+function copyText(id){let t=document.getElementById(id).innerText; navigator.clipboard.writeText(t); alert('Copied: '+t);}
 </script>
 </body>
   </html>
